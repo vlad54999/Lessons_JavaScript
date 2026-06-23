@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum facere illum ipsum libero officiis ratione sint ut velit voluptate.</div>
+    <button id="btnText">Text Off</button>
+    <button id="btnTextOn">Text On</button>
+<!--Свій варіант-->
+    <div id="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum facere illum ipsum libero officiis ratione sint ut velit voluptate.</div>
+    <button id="btnTextOnOff">Text On/Off</button>
+
+<!--    // #j693ca8-->
+<!--    //-->
+<!--    // – створити інпут, який приймає вік людини, та кнопку, яка підтверджує дію. При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік, чи менше він за 18, та повідомити про це користувача-->
+    <div style="margin-top: 20px;">
+        <input type="number" id="ageInput" placeholder="Ваш вік?">
+        <button id="checkBtnAge">Перевірка вашого віку</button>
+    </div>
+
+<!--    // #ymAmN2xJ-->
+<!--    //-->
+<!--    // Створити форму з трьома полями для name, surname, age та кнопкою. При натисканні на кнопку зчитати дані з полів, та вивести об’єкт в документ. Іншими словами : заповнили форму, натиснули кнопку, під формою з’явився блок з вашим об’єктом-->
+    <form name="someForm">
+        <input type="text" name="name" placeholder="Ім'я">
+        <input type="text" name="surname" placeholder="Призвище">
+        <input type="text" name="age" placeholder="Ваш вік">
+        <button>Відправити</button>
+        <div id="target"></div>
+    </form>
+
+
+<!--    #2VaLt4vDczH-->
+
+<!--    є сторінка, на якій є блок, в кому знаходиться цифра. Написати код, який при кожному перезавантажені сторінки буде додавати до неї +1-->
+
+<!--    // #LhSfdhM3-->
+<!--    //-->
+<!--    // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховище, в масив sessionsList зберігається інформація про дату та час відвідування сторінки. Є  сторінка sessionsListPage.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а малювати в DOM-->
+
+    <div>
+        <a href="sessionsListPage.html">Переглянути історію візитів</a>
+    </div>
+
+<!--    // #Jg0gPO00-->
+<!--    //-->
+<!--    // створити конвертор ваги з кг в фунти. дані заповнюються через інпут. При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок-->
+    <input id="inputKonvert" type="number"  placeholder="Кілограми в фунти">
+    <div id="result"></div>
+
+<!--    // #kUSgFqWY-->
+<!--    //-->
+<!--    // Створити 3 інпута та кнопку. Один визначає кількість рядків, другий – кількість ячеєк, третій – вміст ячеєк.-->
+<!--    //-->
+<!--    //     При натисканні кнопки вся ця інформація зчитується і формується табличка з відповідним вмістом.-->
+
+    <form name="tabelGeneratorFrom">
+        <input  type="number" name="lines" placeholder="Кількість рядків>">
+        <input  type="number" name="cells" placeholder="Кількість ячеєк>">
+        <input  type="text" name="data" placeholder="Вміст">
+        <button>Generate</button>
+    </form>
+
+    <table id="table">
+
+    </table>
+
+
+<!--    // #bq1zkx7WP-->
+<!--    //-->
+<!--    // *** (подібне було вище, але…будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення “100грн”-->
+<!--    //-->
+<!--    // при перезавантаженні сторінки до значення додається по 10грн, але !!! зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.-->
+<!--    //-->
+<!--    //     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд, нічого не відбувається-->
+
+    <div id="priceBlock" class="price-box">
+
+    </div>
+
+<!--    // #NKB0tgWIK1G-->
+<!--    //-->
+<!--    // ***PAGINATION-->
+<!--    // зробити масив на 100 об’єктів та дві кнопки prev next-->
+<!--    // при завантаженні сторінки з’являються перші 10 об’єктів.-->
+<!--    //     При натисканні next виводяться наступні 10 об’єктів-->
+<!--    // При натисканні prev виводяться попередні 10 об’єктів-->
+
+    <div>
+        <div id="box"></div>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
