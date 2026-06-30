@@ -1,0 +1,15 @@
+#carts{
+    background-color: tan;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#recipers{
+    background-color: mediumpurple;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipe-img{
+    width: 350px;
+}
